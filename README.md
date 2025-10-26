@@ -1,9 +1,13 @@
-# Connect
+<div align="center">
 
-[![NPM Version][npm-image]][npm-url]
-[![NPM Downloads][downloads-image]][downloads-url]
-[![Build Status][travis-image]][travis-url]
+<img src="logo/horizontal.png" alt="connect logo" width="450px">
+
+[![NPM Version][npm-version-image]][npm-url]
+[![NPM Downloads][npm-downloads-image]][npm-url]
+[![Build Status][github-actions-ci-image]][github-actions-ci-url]
 [![Test Coverage][coveralls-image]][coveralls-url]
+
+</div>
 
   Connect is an extensible HTTP server framework for [node](http://nodejs.org) using "plugins" known as _middleware_.
 
@@ -245,7 +249,7 @@ This means the given routes `/foo/` and `/foo` are the same and both will match 
 with the URLs `/foo`, `/foo/`, `/foo/bar`, and `/foo.bar`, but not match a request with
 the URL `/foobar`.
 
-The `route` is matched in a case-insensitive manor.
+The `route` is matched in a case-insensitive manner.
 
 In order to make middleware easier to write to be agnostic of the `route`, when the
 `fn` is invoked, the `req.url` will be altered to remove the `route` part (and the
@@ -270,23 +274,14 @@ The current lead maintainer is [Douglas Christopher Wilson](https://github.com/d
 
 [List of all contributors](https://github.com/senchalabs/connect/graphs/contributors)
 
-## Node Compatibility
-
-  - Connect `< 1.x` - node `0.2`
-  - Connect `1.x` - node `0.4`
-  - Connect `< 2.8` - node `0.6`
-  - Connect `>= 2.8 < 3` - node `0.8`
-  - Connect `>= 3` - node `0.10`, `0.12`, `4.x`, `5.x`, `6.x`, `7.x`, `8.x`; io.js `1.x`, `2.x`, `3.x`
-
 ## License
 
 [MIT](LICENSE)
 
-[npm-image]: https://img.shields.io/npm/v/connect.svg
+[coveralls-image]: https://badgen.net/coveralls/c/github/senchalabs/connect/master
+[coveralls-url]: https://coveralls.io/r/senchalabs/connect?branch=master
+[github-actions-ci-image]: https://badgen.net/github/checks/senchalabs/connect/master?label=ci
+[github-actions-ci-url]: https://github.com/jshttp/senchalabs/connect?query=workflow%3Aci
+[npm-downloads-image]: https://badgen.net/npm/dm/connect
 [npm-url]: https://npmjs.org/package/connect
-[travis-image]: https://img.shields.io/travis/senchalabs/connect/master.svg
-[travis-url]: https://travis-ci.org/senchalabs/connect
-[coveralls-image]: https://img.shields.io/coveralls/senchalabs/connect/master.svg
-[coveralls-url]: https://coveralls.io/r/senchalabs/connect
-[downloads-image]: https://img.shields.io/npm/dm/connect.svg
-[downloads-url]: https://npmjs.org/package/connect
+[npm-version-image]: https://badgen.net/npm/v/connect
